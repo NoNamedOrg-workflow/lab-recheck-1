@@ -1,0 +1,11 @@
+name: Dummy
+
+on:
+  pull_request:
+    types: [synchronize]
+
+jobs:
+  dummy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo dummy
